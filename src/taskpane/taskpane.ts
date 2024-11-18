@@ -11,10 +11,5 @@ function openTaskpaneWithCode(event: Office.AddinCommands.Event) {
   Office.addin.showAsTaskpane()
 }
 
-function closeTaskpaneWithCode(event: Office.AddinCommands.Event) {
-  Office.addin.hide()
-}
-
 // Register the function
 Office.actions.associate("openTaskpaneWithCode", openTaskpaneWithCode);
-Office.actions.associate("closeTaskpaneWithCode", closeTaskpaneWithCode);
